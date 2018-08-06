@@ -1,20 +1,67 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="container">
+    <div class="AboutMe">
+        <div id="title" class="col-sm-12 fade-in">
+            <h2 id="myname"> {{myname}} </h2>
+            <h4 id="expertise" style="font-size: 1.5em">{{expertised}}</h4>
+        </div>
+        <div class="row">
+            <div id="aboutMe" class="col-sm-4">
+                <label>About me</label>
+                <br>
+                <p id="contentAboutMe">{{contentAboutMe}}</p>
+            </div>
 
+            <div class="col-sm-4" style="padding-left: 30px">
+                <div class="profilePhoto">
+                    <div class="profileAdjustment">
+                        <img src="../app/assets/MeraPhoto.jpg" alt="" width="140" height="140" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="contactMe" class="col-sm-4">
+                <label>{{MobileNumber}}</label>
+                <br>
+                <label>{{emailId}}</label>
+                <br>
+                <label>
+                    <a href={{network.url}} *ngFor="let network of networks" class="socialNetworking" target="_blank">
+                        <img src={{network.imgSrc}} class="iconReplacer">
+                    </a>
+                </label>
+            </div>
+        </div>
+        <div class="col-sm-12" style="padding: 0">
+            <div class="col-sm-6 leftdivsion"></div>
+            <div class="col-sm-6 rightDivison"></div>
+        </div>
+        <div class="col-sm-12" class="sections">
+            <div class="col-sm-6 leftSections">
+                <div class="button" id="aboutmeContent" style="margin-left: 3em">
+                    <a href="/aboutme" rel="no-refresh">About Me</a>
+                </div>
+                <div class="button" id="activites" style="margin-left: 1.5em">
+                    <a href="/activities" rel="no-refresh">Activites</a>
+                </div>
+                <div class="button" id="education" style="margin-left: 1.5em">
+                    <a href="/education" rel="no-refresh">Education</a>
+                </div>
+
+            </div>
+            <div class="col-sm-6 rightSections">
+                <div class="button" id="skills" style="margin-left: 3em">
+                    <a href="/skills">Skills</a>
+                </div>
+                <div class="button" id="projects" style="margin-left: 1.5em">
+                    <a href="/projects">Projects</a>
+                </div>
+                <div class="button" id="all" style="margin-left: 1.5em">
+                    <a href="#">All</a>
+                </div>
+            </div>
+        </div>
+        <div style="width:100%;height: auto;">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
