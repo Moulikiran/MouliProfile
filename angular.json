@@ -30,7 +30,7 @@
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
               "./node_modules/tether/dist/js/tether.min.js",
-              "./node_modules/popper.js/dist/popper.min.js" 
+              "./node_modules/popper.js/dist/popper.min.js"
             ]
           },
           "configurations": {
@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "MouliProfile"
+  "defaultProject": "MouliProfile",
+  "cli": {
+    "analytics": "ab82d385-2b0a-49da-8cb0-c1662695c4ec"
+  }
 }
