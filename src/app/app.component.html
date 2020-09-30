@@ -1,14 +1,15 @@
 <div class="container">
     <div class="AboutMe">
         <div id="title" class="col-sm-12 fade-in">
-            <h2 id="myname"> {{myname}} </h2>
-            <h4 id="expertise" style="font-size: 1.5em">{{expertised}}</h4>
+            <h2 id="myQuote"> {{myQuote}} </h2>
         </div>
         <div class="row">
             <div id="aboutMe" class="col-sm-4">
-                <label>About me</label>
+                <h2 id="myname"> {{myname}} </h2>
+                <h4 id="expertise" style="font-size: 1.5em">{{expertised}}</h4>
+                <!-- <label>About me</label>
                 <br>
-                <p id="contentAboutMe">{{contentAboutMe}}</p>
+                <p id="contentAboutMe">{{contentAboutMe}}</p> -->
             </div>
 
             <div class="col-sm-4" style="padding-left: 30px">
@@ -20,9 +21,9 @@
             </div>
 
             <div id="contactMe" class="col-sm-4">
-                <label>{{MobileNumber}}</label>
+                <label id="mobileNumber">{{MobileNumber}}</label>
                 <br>
-                <label>{{emailId}}</label>
+                <label id="emailId">{{emailId}}</label>
                 <br>
                 <label>
                     <a href={{network.url}} *ngFor="let network of networks" class="socialNetworking" target="_blank">
@@ -38,25 +39,25 @@
         <div class="col-sm-12" class="sections">
             <div class="col-sm-6 leftSections">
                 <div class="button" id="aboutmeContent" style="margin-left: 3em">
-                    <a href="/aboutme" rel="no-refresh">About Me</a>
+                    <a (click)="routeToPage('aboutme')" rel="no-refresh">About Me</a>
                 </div>
                 <div class="button" id="activites" style="margin-left: 1.5em">
-                    <a href="/activities" rel="no-refresh">Activites</a>
+                    <a (click)="routeToPage('activities')" rel="no-refresh">Activites</a>
                 </div>
                 <div class="button" id="education" style="margin-left: 1.5em">
-                    <a href="/education" rel="no-refresh">Education</a>
+                    <a (click)="routeToPage('education')" rel="no-refresh">Education</a>
                 </div>
 
             </div>
             <div class="col-sm-6 rightSections">
                 <div class="button" id="skills" style="margin-left: 3em">
-                    <a href="/skills">Skills</a>
+                    <a (click)="routeToPage('skills')">Skills</a>
                 </div>
                 <div class="button" id="projects" style="margin-left: 1.5em">
-                    <a href="/projects">Projects</a>
+                    <a (click)="routeToPage('projects')">Projects</a>
                 </div>
                 <div class="button" id="all" style="margin-left: 1.5em">
-                    <a href="#">All</a>
+                    <a (click)="routeToPage('aboutme')">All</a>
                 </div>
             </div>
         </div>

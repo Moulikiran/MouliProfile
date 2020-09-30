@@ -21,8 +21,9 @@ export class AppComponent implements OnInit {
   emailId: string;
   pollingData: any;   
   headers: Headers;
-  oldSelected : string;   
-
+  oldSelected : string;
+  myQuote : string;
+  
   headerDict = {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
@@ -62,12 +63,16 @@ export class AppComponent implements OnInit {
       $('#myname').fadeIn('slow');
     });
     this.myname = 'Mouli Kiran';
+    this.myQuote = 'If you think you can </CODE> you are still young;'
     this.expertised = 'Full Stack developer';
     this.userTemplate = true;
     this.contentAboutMe = `this is me about this is me about this is me about
                           this is me about this is me about this is me about
                           this is me aboutthis is me about`;
     this.emailId = 'moulikiran.somesetty@gmail.com';
-    this.MobileNumber = '9888757541';
+    this.MobileNumber = '+(91)-7799827883';
+  }
+  private routeToPage(toPage: string){
+    this.router.navigate(['/'+toPage]);
   }
 }
