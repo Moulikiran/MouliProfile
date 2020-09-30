@@ -72,7 +72,7 @@ export class AppComponent implements OnInit {
     this.emailId = 'moulikiran.somesetty@gmail.com';
     this.MobileNumber = '+(91)-7799827883';
   }
-  private routeToPage(toPage: string){
+  public routeToPage(toPage: string){
     this.router.navigate(['/'+toPage]);
   }
 }
