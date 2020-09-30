@@ -9,8 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "sample": "node server.js",
-    "preinstall": "npm install ng",
-    "heroku-postbuild": "ng build --prod"
+    "preinstall": "npm install ng"
   },
   "private": true,
   "dependencies": {
