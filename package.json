@@ -9,7 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "sample": "node server.js",
-    "preinstall": "npm install ng"
+    "preinstall": "npm install ng",
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -39,12 +40,12 @@
     "rxjs": "6.2.2",
     "rxjs-compat": "6.2.2",
     "saucelabs": "^1.5.0",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "@angular/cli": "~6.0.8",
+    "@angular/compiler-cli": "^6.0.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.6.8",
-    "@angular/cli": "~6.0.8",
-    "@angular/compiler-cli": "^6.0.3",
     "@angular/language-service": "^6.0.3",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
