@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "sample": "node server.js",
-    "preinstall": "npm install -g angular-cli",
+    "preinstall": "npm install -g @angular/cli@latest && npm install",
     "postinstall": "ng build && mv dist/* ."
   },
   "private": true,
