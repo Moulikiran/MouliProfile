@@ -1,5 +1,5 @@
 {
-  "name": "mouli-profile",
+  "name": "mouliprofile",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
     "@ng-bootstrap/ng-bootstrap": "^2.2.0",
+    "angular-cli-ghpages": "^0.6.2",
     "angular-image-slider": "0.0.9",
     "angular-popper": "^2.0.0",
     "body-parser": "^1.18.3",
@@ -31,6 +32,7 @@
     "express": "^4.16.3",
     "jquery": "^3.3.1",
     "mongodb": "^2.2.33",
+    "ng": "0.0.0",
     "popper.js": "^1.14.3",
     "rxjs": "6.2.2",
     "rxjs-compat": "6.2.2",
