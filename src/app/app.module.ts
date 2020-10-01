@@ -18,6 +18,10 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { MatProgressSpinner } from '@angular/material';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { SliderModule } from 'angular-image-slider';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgImageSliderModule } from 'ng-image-slider';
+
 
 
 
@@ -40,6 +44,9 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     NgbModule.forRoot(),
     AdminAreaModule,
     HttpModule,
+    BrowserAnimationsModule,
+    SliderModule,
+    NgImageSliderModule,
     NgCircleProgressModule.forRoot({})
   ],
   providers: [DataService],
