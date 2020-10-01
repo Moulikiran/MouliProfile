@@ -8,7 +8,8 @@
 <div style="border: 1px solid black; width: inherit;height: 70px; border-radius: 20px;">
     <label style="float: left; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 25px; padding-top: 10px; padding-left: 45px; color: teal;">Skills: &nbsp;</label>
     <div *ngFor = "let skill of skills" style="float: left;">
-      <label style="font-size: 20px; color: dimgray;">{{skill.skillName}},&nbsp;</label>
+      <label style="font-size: 20px; color: dimgray;">{{skill.skillName}} &nbsp;&nbsp;</label>
+      <br>
     </div>
 </div>
 
@@ -24,13 +25,19 @@
   [innerStrokeColor]="'#e7e8ea'"
   [titleFontSize]= "24"
   [unitsFontSize]= "24"
-  [showSubtitle] = "false"
+  [showSubtitle] = "true"
+  [subtitleFontSize] = "20"
+  [showTitle]="true"
+  [showUnits] = "false"
+  [units] = "point"
+  [title]="skill.skillName"
   [animation]="true"
-  [animationDuration]="500"
+  [animationDuration]="1000"
   [startFromZero]="true"
   [responsive]="true"
+  [subtitleFormat]="skill.subtitle"
 ></circle-progress>
-<label style="font-size: 20px; font-family: 'Comic Sans MS', cursive, sans-serif; color:#1d1924;">{{skill.skillName}}</label>
+<!-- <label style="font-size: 20px; font-family: 'Comic Sans MS', cursive, sans-serif; color:#1d1924;">{{skill.skillName}}</label> -->
 </div>
 </div>
 
