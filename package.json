@@ -8,8 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "sample": "node server.js",
-    "preinstall": "npm install ng"
+    "sample": "node server.js"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +21,8 @@
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
+    "@angular/material": "^6.0.3",
+    "@angular/cdk": "^6.0.3",
     "@ng-bootstrap/ng-bootstrap": "^2.2.0",
     "angular-cli-ghpages": "^0.6.2",
     "angular-image-slider": "0.0.9",
@@ -34,6 +35,7 @@
     "express": "^4.16.3",
     "jquery": "^3.3.1",
     "mongodb": "^2.2.33",
+    "ng-circle-progress": "1.2.0",
     "ng": "0.0.0",
     "popper.js": "^1.14.3",
     "rxjs": "6.2.2",

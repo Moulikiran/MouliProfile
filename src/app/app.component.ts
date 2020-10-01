@@ -64,7 +64,7 @@ export class AppComponent implements OnInit {
     });
     this.myname = 'Mouli Kiran';
     this.myQuote = 'If you think you can </CODE> you are still young;'
-    this.expertised = 'Full Stack developer';
+    this.expertised = 'Full Stack Engineer';
     this.userTemplate = true;
     this.contentAboutMe = `this is me about this is me about this is me about
                           this is me about this is me about this is me about

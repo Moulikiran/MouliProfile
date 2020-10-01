@@ -16,6 +16,8 @@ import { ActivitiesComponent } from './components/activities/activities.componen
 import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { MatProgressSpinner } from '@angular/material';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 
 
@@ -28,7 +30,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
     ActivitiesComponent,
     EducationComponent,
     SkillsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    MatProgressSpinner
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
     NgxPopper,
     NgbModule.forRoot(),
     AdminAreaModule,
-    HttpModule
+    HttpModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
