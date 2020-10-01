@@ -5,7 +5,7 @@
     text-align: center;
 }
 
-#horizontalBar{
+#horizontalBar {
     margin-top: 0em;
     height:3px;
     border-width:0;
@@ -31,6 +31,11 @@
     align-content: flex-start;
 }
 
+
+.image{
+  height: 400px;
+  width: 300px;
+}
 
 /* image slider start */
 

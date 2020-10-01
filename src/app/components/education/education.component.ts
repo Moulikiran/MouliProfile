@@ -29,9 +29,32 @@ export class EducationComponent implements OnInit {
     percentage: "77%"
   }];
 
+  imagesUrl: Array<object> = [{
+      image: '../app/assets/tenth.JPG',
+      thumbImage: '../app/assets/tenth.JPG',
+      alt: 'alt of image',
+      title: 'Tenth'
+    }, {
+      image: '../app/assets/inter.JPG', // Support base64 image
+      thumbImage: '../app/assets/inter.JPG', // Support base64 image
+      title: 'Intermediate', //Optional: You can use this key if want to show image with title
+      alt: 'Intermediate' //Optional: You can use this key if want to show image with alt
+    }, {
+      image: '../app/assets/btech.JPG', // Support base64 image
+      thumbImage: '../app/assets/btech.JPG', // Support base64 image
+      title: 'BTech', //Optional: You can use this key if want to show image with title
+      alt: 'BTech' //Optional: You can use this key if want to show image with alt
+    }, {
+      image: '../app/assets/provisional.JPG', // Support base64 image
+      thumbImage: '../app/assets/provisional.JPG', // Support base64 image
+      title: 'BTech', //Optional: You can use this key if want to show image with title
+      alt: 'BTech' //Optional: You can use this key if want to show image with alt
+    }
+  ];
+
   constructor() { }
 
   ngOnInit() {
-  
+   
   }
 }
