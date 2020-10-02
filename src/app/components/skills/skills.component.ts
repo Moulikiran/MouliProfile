@@ -92,6 +92,13 @@ export class SkillsComponent implements OnInit {
       color: "#4882c2",
       subtitle: (progress: number): string => {
         return `${progress}%`; }
+    },
+    {
+      skillName:"Microstrategy",
+      progress: "55",
+      color: "#ff8763",
+      subtitle: (progress: number): string => {
+        return `${progress}%`; }
     }
   ]
 
