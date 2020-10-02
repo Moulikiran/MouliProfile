@@ -16,7 +16,6 @@ import { ActivitiesComponent } from './components/activities/activities.componen
 import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { MatProgressSpinner } from '@angular/material';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { SliderModule } from 'angular-image-slider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -34,8 +33,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
     ActivitiesComponent,
     EducationComponent,
     SkillsComponent,
-    ProjectsComponent,
-    MatProgressSpinner
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
